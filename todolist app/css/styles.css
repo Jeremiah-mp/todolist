@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+}
+
+h1{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: #E5BA73;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+button{
+    border: none;
+    height: 50px;
+    width: 50px;
+    color: #E5BA73;
+    font-size: 40px;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: #393E46;
+    margin-left: 20px;   
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+ul{
+    list-style: none;
+}
+
+p#todo-number{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #E5BA73;
+    outline: none;
+    margin-left: 20px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+    color: #E5BA73;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    background-color: #000;
+}
+
+/* Hide the default checkbox appearance */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+  }
+  
+  /* Set the size of the checkbox */
+input[type="checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #E5BA73;
+    border-radius: 50%; /* Set the border radius to 50% for a circular shape */
+}
+  
+  /* Set the appearance of the checkbox when it is checked */
+input[type="checkbox"]:checked::before {
+    background-color: #E5BA73;
+}  
+
+li{
+    width: 95%;
+    height: 100px;
+    border: none;
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #E5BA73;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.5s;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+li:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.main-content{
+    height: 100vh;
+    width: 100%;
+}
+
+.top-content{
+    color: #E5BA73;
+    margin-top: 58px;  
+    padding-left: 20px; 
+    margin-bottom: 30px;
+}
+
+.bottom-content{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: max-content;
+    padding-bottom: 5px;
+}
+
+.middle-content{
+    margin-bottom: 50px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
