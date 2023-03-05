@@ -1,5 +1,0 @@
-[] - Must be able to add todos
-[] - must be able to display todos
-[] - must be able to edit todos
-[] - must be able to delete todos
-[] - must be able to mark todos as complete
