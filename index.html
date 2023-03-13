@@ -4,51 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Philosopher&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito+Sans&family=Philosopher&display=swap" rel="stylesheet">
     <title>Todolist App | Where Things Get Done</title>
 </head>
 <body>
     <div class="main-content">
 
         <!--Top Content-->
-        <div class="top-content">
-            <h1 id="main-header">todolist</h1>
-            <p id="todo-number"><span id="number-of-todos"> 0 </span> tasks</p>
+        <div class="add-todo-div">
+            <input type="text" id="type-todo" placeholder=" e.g Go Grocery Shopping">
+            <button id="add-item">+</button>
         </div>
-
-        <!--Text Field-->
-        <div class="middle-content">
-            <input type="text" name="" id="type-todo" placeholder="e.g Go Grocery shopping">
-            <button id="add"> + </button>
-        </div>
-
         <!--Todo Items-->
-        <div class="bottom-content">
+        <div class="todo-content-div">
             <ul id = "todo-list">
 
             </ul>
         </div>
+
     </div>
 
     <script src="./index.js"></script>
 </body>
 </html>
-
-                <!-- <li>
-                    <input type="checkbox" name="" id="item-1">
-                    <label for="">Go for a walk in the park</label>
-                </li>
-                <li> 
-                    <input type="checkbox" name="" id="item-1">
-                    <label for="">Go for a walk in the park</label>
-                </li>
-                <li> 
-                     <input type="checkbox" name="" id="item-1">
-                    <label for="">Go for a walk in the park</label>
-                </li> -->
-
-<!-- <input type="checkbox" name="" id=""> -->
