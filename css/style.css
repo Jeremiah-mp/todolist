@@ -88,9 +88,9 @@ button.delete{
 
 .add-todo-div{
     display: flex;
-    height: 10vh;
+    height: 70px;
     width: 100%;
-    padding: 25px 0;
+    padding: 15px 0;
     box-sizing: border-box;
     justify-content: center;
     background-color: #34656D;  
