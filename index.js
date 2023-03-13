@@ -19,7 +19,7 @@ addButton.addEventListener("click", function(event){
 //event listener to mark todo as complete
 todoItems.addEventListener("click", function(e){
     if(e.target.classList.contains("delete")){
-        const itemKey = e.target.id
+        const itemKey = e.target.parentElement.id
         deleteTodo(itemKey)
     }else if(e.target.tagName === "LI"){
         const itemKey = e.target.id
@@ -27,23 +27,6 @@ todoItems.addEventListener("click", function(e){
         markAsComplete(itemKey)
     }
 })
-
-
-//functions
-//function to add delete button to all list itmes
-function addDeletButton() {
-    const todoItems = document.querySelectorAll("li")
-    for(let i = 0 ; i < todoItems.length ; i++){
-        const deleteButton = document.createElement("button")
-        const text = document.createTextNode("x")
-        deleteButton.className = "delete"
-        deleteButton.append(text)
-        todoItems[i].append(deleteButton)
-    }   
-}
-
-//calls the add delete button
-addDeletButton()
 
 //function to add new todo item
 function addTodo(event) {
