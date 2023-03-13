@@ -4,126 +4,99 @@
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #000;
-}
-
-h1{
+    width: 100%;
+    height: 100vh;
+    color: #34656D;
+    font-weight: 700px;
     text-transform: capitalize;
-    padding-bottom: 10px;
-    color: #E5BA73;
-    letter-spacing: 2px;
-    font-size: 50px;
-}
-
-button{
-    border: none;
-    height: 50px;
-    width: 50px;
-    color: #E5BA73;
-    font-size: 40px;
-    font-weight: 500;
-    border-radius: 30px;
-    background-color: #393E46;
-    margin-left: 20px;   
-    transition: transform 0.2s ease-in-out;
-}
-
-button:hover{
-    transform: scale(1.1);
-}
-
-ul{
-    list-style: none;
-}
-
-p#todo-number{
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-input[type="text"]{
-    border: none;
-    border-bottom: 1px solid #E5BA73;
-    outline: none;
-    margin-left: 20px;
-    width: 300px;
+    background-color: #DAE0F5;
     font-family: 'Montserrat', sans-serif;
-    color: #E5BA73;
+}
+
+input[type='text']{
+    width: 60%;
+    height: 40px;
+    border: none;
+    outline: none;
     font-size: 20px;
+    font-weight: 700;
+    color: #6096B4;
+    padding-left: 10px;
     text-transform: capitalize;
-    padding-bottom: 10px;
-    background-color: #000;
+    background-color: #F5F5F5;
+    font-family: 'montserrat', sans-serif;
 }
 
-/* Hide the default checkbox appearance */
-input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    outline: none;
-    border: none;
-  }
-  
-  /* Set the size of the checkbox */
-input[type="checkbox"]::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    border: 1px solid #E5BA73;
-    border-radius: 50%; /* Set the border radius to 50% for a circular shape */
+input[type='text']::placeholder{
+    font-family: 'montserrat', sans-serif;   
 }
-  
-  /* Set the appearance of the checkbox when it is checked */
-input[type="checkbox"]:checked::before {
-    background-color: #E5BA73;
-}  
 
 li{
-    width: 95%;
-    height: 100px;
-    border: none;
-    font-size: 23px;
-    text-transform: capitalize;
-    font-weight: 500;
-    color: #E5BA73;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 0.5s;
-    margin-bottom: 30px;
-    padding: 10px 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
 }
 
-li:hover{
-    background-color: rgba(255, 255, 255, 0.25);
+li:nth-child(odd){
+    background-color: #DAE0F5;
+    transition: background-color 0.2s;
+}
+
+li:nth-child(even){
+    background-color: #BDCDD6;
+    transition: background-color 0.2s;
+}
+
+li:nth-child(even):hover,
+li:nth-child(odd):hover{
+    background-color: #62B6B7
+}
+
+input[type='text']::placeholder{
+    text-transform: none;
+}
+
+button#add-item{
+    width: 50px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    background-color: #62B6B7;
+    transition: background-color 0.2s;
+}
+
+button#add-item:hover{
+    background-color: #7DB9B6;
+}
+
+button.delete{
+    height: 25px;
+    width: 25px;
+    float: right;
+    border: none;
+    font-size: 25px;
+    color: #00425A;
+    background-color: transparent;
 }
 
 .main-content{
-    height: 100vh;
     width: 100%;
+    height: 100vh;
 }
 
-.top-content{
-    color: #E5BA73;
-    margin-top: 58px;  
-    padding-left: 20px; 
-    margin-bottom: 30px;
-}
-
-.bottom-content{
-    padding-left: 20px;
-    padding-right: 20px;
-    height: max-content;
-    padding-bottom: 5px;
-}
-
-.middle-content{
-    margin-bottom: 50px;
+.add-todo-div{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    padding: 25px 0;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #34656D;  
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);   
 }
 
 .line-through{
-    text-decoration: line-through;
+    text-decoration: line-through;   
 }
