@@ -60,6 +60,7 @@ li:nth-child(odd).line-through{
 
 input[type='text']::placeholder{
     text-transform: none;
+    color: #BDCDD6;
 }
 
 button#add-item{
